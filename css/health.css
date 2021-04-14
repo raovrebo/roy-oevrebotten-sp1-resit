@@ -169,36 +169,35 @@ button {
 
 .health-images {
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
 #image1 {
-  width: 78%;
+  width: 100%;
   height: auto;
-  margin: 0 0.5rem 0 0.5rem;
+  margin: 0 5%;
+  float: left;
   outline: var(--primary-color) 2px solid;
-  justify-content: center;
 }
 
 #image2 {
-  width: 78%;
+  width: 100%;
   height: auto;
-  margin: 0 0.5rem 0 0.5rem;
+  margin: 0 5%;
+  float: right;
   outline: var(--primary-color) 2px solid;
-  justify-content: center;
 }
 
 #image3 {
-  width: 78%;
+  width: 100%;
   height: auto;
-  margin: 0 0.5rem 0 0.5rem;
+  margin: 0 5%;
+  float: right;
   outline: var(--primary-color) 2px solid;
-  justify-content: center;
 }
 
-/* Be prepared, be realistic. be huble */
+/* Be prepared, be realistic, be huble */
 
 .prepared {
   background-color: var(--green-color);
