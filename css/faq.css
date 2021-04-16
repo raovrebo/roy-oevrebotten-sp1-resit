@@ -357,3 +357,47 @@ footer {
 }
 
 /* Tablet view */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .logo img {
+    width: 15%;
+  }
+
+  .btn-contact a {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 998px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}

@@ -159,31 +159,17 @@ h2:active {
 
 .health-images {
   display: flex;
-  width: 90%;
-  height: auto;
-}
-
-#image1 {
   width: 100%;
   height: auto;
-  margin: 0 5%;
-  float: left;
-  outline: var(--primary-color) 2px solid;
+  justify-content: space-evenly;
 }
 
-#image2 {
-  width: 100%;
-  height: auto;
-  margin: 0 5%;
-  float: right;
-  outline: var(--primary-color) 2px solid;
-}
-
+#image1,
+#image2,
 #image3 {
-  width: 100%;
+  width: 85px;
   height: auto;
-  margin: 0 5%;
-  float: right;
+  margin: 0 2.5% 0 2.5%;
   outline: var(--primary-color) 2px solid;
 }
 
@@ -329,44 +315,96 @@ h2:active {
   grid-column: 1 / span 3;
 }
 
-.health-images img {
+.health-images {
   grid-row: 4;
   grid-column: 1 / span 3;
 }
 
-#image1 {
-  grid-row: 5;
-  grid-column: 1;
-}
-
-#image2 {
-  grid-row: 5;
-  grid-column: 2;
-}
-
-#image3 {
-  grid-row: 5;
-  grid-column: 3;
-}
-
 .prepared {
-  grid-row: 6;
+  grid-row: 5;
   grid-column: 1 / span 3;
 }
 
 .realistic {
-  grid-row: 7;
+  grid-row: 6;
   grid-column: 1 / span 3;
 }
 
 .humble {
-  grid-row: 8;
+  grid-row: 7;
   grid-column: 1 / span 3;
 }
 
 footer {
-  grid-row: 9;
+  grid-row: 8;
   grid-column: 1 / span 3;
 }
 
 /* Tablet View */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .logo img {
+    width: 15%;
+  }
+
+  #image1,
+  #image2,
+  #image3 {
+    width: 220px;
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 998px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  #image1,
+  #image2,
+  #image3 {
+    width: 300px;
+  }
+
+  .prepared {
+    grid-row: 5;
+    grid-column: 1;
+  }
+
+  .realistic {
+    grid-row: 5;
+    grid-column: 2;
+  }
+
+  .humble {
+    grid-row: 5;
+    grid-column: 3;
+  }
+}

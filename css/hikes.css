@@ -163,10 +163,10 @@ h2:active {
   height: auto;
 }
 
-.deal h2 {
+.deal h3 {
   color: var(--red-color);
   text-align: center;
-  font-weight: bold;
+  font-weight: bolder;
   padding: 0 0.5rem 0 0.5rem;
   width: 95%;
   height: auto;
@@ -212,16 +212,10 @@ h2:active {
   justify-content: center;
 }
 
-#pyrenees-image {
-  margin: 0 5%;
-  width: 30%;
-  height: auto;
-  outline: var(--primary-color) 2px solid;
-}
-
+#pyrenees-image,
 #pyrenees-map {
-  margin: 0;
-  width: 30%;
+  margin: 0 5% 0 5%;
+  width: 130px;
   height: auto;
   outline: var(--primary-color) 2px solid;
 }
@@ -253,16 +247,10 @@ h2:active {
   justify-content: center;
 }
 
-#bergen-image {
-  margin: 0 5%;
-  width: 30%;
-  height: auto;
-  outline: var(--primary-color) 2px solid;
-}
-
+#bergen-image,
 #bergen-map {
-  margin: 0;
-  width: 30%;
+  margin: 0 5% 0 5%;
+  width: 130px;
   height: auto;
   outline: var(--primary-color) 2px solid;
 }
@@ -294,16 +282,10 @@ h2:active {
   justify-content: center;
 }
 
-#tuscany-image {
-  margin: 0 5%;
-  width: 30%;
-  height: auto;
-  outline: var(--primary-color) 2px solid;
-}
-
+#tuscany-image,
 #tuscany-map {
-  margin: 0;
-  width: 30%;
+  margin: 0 5% 0 5%;
+  width: 130px;
   height: auto;
   outline: var(--primary-color) 2px solid;
 }
@@ -353,16 +335,10 @@ h2:active {
   justify-content: center;
 }
 
-#morocco-image {
-  margin: 0 5%;
-  width: 30%;
-  height: auto;
-  outline: var(--primary-color) 2px solid;
-}
-
+#morocco-image,
 #morocco-map {
-  margin: 0;
-  width: 30%;
+  margin: 0 5% 0 5%;
+  width: 130px;
   height: auto;
   outline: var(--primary-color) 2px solid;
 }
@@ -394,16 +370,10 @@ h2:active {
   justify-content: center;
 }
 
-#mongolia-image {
-  margin: 0 5%;
-  width: 30%;
-  height: auto;
-  outline: var(--primary-color) 2px solid;
-}
-
+#mongolia-image,
 #mongolia-map {
-  margin: 0;
-  width: 30%;
+  margin: 0 5% 0 5%;
+  width: 130px;
   height: auto;
   outline: var(--primary-color) 2px solid;
 }
@@ -435,16 +405,10 @@ h2:active {
   justify-content: center;
 }
 
-#yellowstone-image {
-  margin: 0 5%;
-  width: 30%;
-  height: auto;
-  outline: var(--primary-color) 2px solid;
-}
-
+#yellowstone-image,
 #yellowstone-map {
-  margin: 0;
-  width: 30%;
+  margin: 0 5% 0 5%;
+  width: 130px;
   height: auto;
   outline: var(--primary-color) 2px solid;
 }
@@ -495,16 +459,10 @@ h2:active {
   justify-content: center;
 }
 
-#australia-image {
-  margin: 0 5%;
-  width: 30%;
-  height: auto;
-  outline: var(--primary-color) 2px solid;
-}
-
+#australia-image,
 #australia-map {
-  margin: 0;
-  width: 30%;
+  margin: 0 5% 0 5%;
+  width: 130px;
   height: auto;
   outline: var(--primary-color) 2px solid;
 }
@@ -536,16 +494,10 @@ h2:active {
   justify-content: center;
 }
 
-#argchi-image {
-  margin: 0 5%;
-  width: 30%;
-  height: auto;
-  outline: var(--primary-color) 2px solid;
-}
-
+#argchi-image,
 #argchi-map {
-  margin: 0;
-  width: 30%;
+  margin: 0 5% 0 5%;
+  width: 130px;
   height: auto;
   outline: var(--primary-color) 2px solid;
 }
@@ -577,16 +529,10 @@ h2:active {
   justify-content: center;
 }
 
-#india-image {
-  margin: 0 5%;
-  width: 30%;
-  height: auto;
-  outline: var(--primary-color) 2px solid;
-}
-
+#india-image,
 #india-map {
-  margin: 0;
-  width: 30%;
+  margin: 0 5% 0 5%;
+  width: 130px;
   height: auto;
   outline: var(--primary-color) 2px solid;
 }
@@ -915,3 +861,147 @@ footer {
 }
 
 /* Tablet view */
+@media screen and (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10;
+    margin: 0;
+    background-color: var(--white-color);
+    min-width: 768px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .logo img {
+    width: 15%;
+  }
+
+  #pyrenees-image,
+  #pyrenees-map {
+    width: 300px;
+  }
+
+  #bergen-image,
+  #bergen-map {
+    width: 300px;
+  }
+
+  #tuscany-image,
+  #tuscany-map {
+    width: 300px;
+  }
+
+  #morocco-image,
+  #morocco-map {
+    width: 300px;
+  }
+
+  #mongolia-image,
+  #mongolia-map {
+    width: 300px;
+  }
+
+  #yellowstone-image,
+  #yellowstone-map {
+    width: 300px;
+  }
+
+  #australia-image,
+  #australia-map {
+    width: 300px;
+  }
+
+  #argchi-image,
+  #argchi-map {
+    width: 300px;
+  }
+
+  #india-image,
+  #india-map {
+    width: 300px;
+  }
+
+  .btn-price a {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop view */
+
+@media screen and (min-width: 998px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  #pyrenees-image,
+  #pyrenees-map {
+    width: 430px;
+  }
+
+  #bergen-image,
+  #bergen-map {
+    width: 430px;
+  }
+
+  #tuscany-image,
+  #tuscany-map {
+    width: 430px;
+  }
+
+  #morocco-image,
+  #morocco-map {
+    width: 430px;
+  }
+
+  #mongolia-image,
+  #mongolia-map {
+    width: 430px;
+  }
+
+  #yellowstone-image,
+  #yellowstone-map {
+    width: 430px;
+  }
+
+  #australia-image,
+  #australia-map {
+    width: 430px;
+  }
+
+  #argchi-image,
+  #argchi-map {
+    width: 430px;
+  }
+
+  #india-image,
+  #india-map {
+    width: 430px;
+  }
+}

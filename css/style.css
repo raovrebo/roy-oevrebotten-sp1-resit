@@ -163,10 +163,10 @@ h2:active {
   height: auto;
 }
 
-.deal h2 {
+.deal h3 {
   color: var(--red-color);
   text-align: center;
-  font-weight: bold;
+  font-weight: bolder;
   padding: 0 0.5rem 0 0.5rem;
   width: 95%;
   height: auto;
@@ -324,7 +324,7 @@ h2:active {
 /* Mobile view */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 10;
   margin: 0;
   background-color: var(--white-color);
@@ -408,3 +408,149 @@ footer {
 }
 
 /* Tablet view */
+@media screen and (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10;
+    margin: 0;
+    background-color: var(--white-color);
+    min-width: 768px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .logo img {
+    width: 15%;
+  }
+
+  .btn-explore a {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 998px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .short-hikes,
+  .long-hikes,
+  .camping-hikes {
+    margin: 5% 0 0 0;
+  }
+
+  .short-hikes,
+  .camping-hikes,
+  .long-hikes h2 {
+    width: 100%;
+  }
+
+  .short-hikes,
+  .camping-hikes,
+  .long-hikes h3 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .short-hikes-image,
+  img {
+    margin: 75% 0 0 0;
+  }
+
+  .camping-hikes-image,
+  img {
+    margin: 75% 0 0 0;
+  }
+
+  .long-hikes-image,
+  img {
+    margin: 75% 0 0 0;
+  }
+
+  .btn-explore a {
+    margin: 0 30% 10% 35%;
+  }
+
+  .logo img {
+    width: 10%;
+  }
+
+  .short-hikes {
+    grid-row: 6;
+    grid-column: 1;
+  }
+
+  .short-hikes h2,
+  h3 {
+    grid-row: 6;
+    grid-column: 1;
+  }
+
+  .short-hikes-image {
+    grid-row: 6;
+    grid-column: 1;
+  }
+
+  .btn-explore {
+    grid-row: 6;
+    grid-column: 1;
+  }
+
+  .camping-hikes {
+    grid-row: 6;
+    grid-column: 2;
+  }
+
+  .camping-hikes-image {
+    grid-row: 6;
+    grid-column: 2;
+  }
+
+  .long-hikes {
+    grid-row: 6;
+    grid-column: 3;
+  }
+
+  .long-hikes-image {
+    grid-row: 6;
+    grid-column: 3;
+  }
+
+  .btn-explore {
+    grid-row: 6;
+    grid-column: 3;
+  }
+
+  footer {
+    grid-row: 7;
+    grid-column: 1;
+  }
+}
