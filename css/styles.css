@@ -45,10 +45,10 @@ p {
 
 /* Hamburger Menu */
 
-nav {
+.hamburger-menu nav {
   display: none;
-  padding: 0.5rem;
-  /* background-color: var(--lightblue-color); */
+  padding: 5% 5% 30% 0;
+  text-decoration: none;
 }
 
 #hamburger-menu {
@@ -61,19 +61,25 @@ nav {
 }
 
 .hamburger-menu img {
-  width: 20px;
-  margin: 0.5rem 1rem 0.5rem 0.5rem;
+  width: 30px;
+  margin: 5%;
   position: center;
 }
 
+.hamburger-menu #form {
+  outline: var(--primary-color) 2px solid;
+}
+
 .hamburger-menu #form img {
-  width: 20px;
+  width: 25px;
+  height: auto;
+  margin: 55% 0 0 0;
 }
 
 .hamburger-menu a {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -82,68 +88,53 @@ nav {
   width: auto;
 }
 
-#list-menu img:link,
-:visited {
-  color: var(--lightblue-color);
-}
-
-#list-menu img:hover,
-:active {
-  background-color: var(--yellow-color);
-}
-
-#list-menu h2:link,
+.hamburger-menu a:link,
 :visited {
   text-decoration: none;
 }
 
-#list-menu h2:hover,
-:active {
+.hamburger-menu a:hover,
+:active,
+h2:hover,
+h2:active {
   background-color: var(--yellow-color);
   text-decoration: underline;
 }
 
 /* Searchbar */
 
-form {
-  background-color: var(--lightblue-color);
-  width: 90%;
+.hamburger-menu form {
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
-  margin: 0 0 1rem 0;
-  outline: var(--primary-color 2px solid);
+  margin: 0;
 }
 
-input {
+.hamburger-menu input {
   all: unset;
-  font: 1rem;
-  color: var(--primary-color);
-  height: 100%;
-  width: 100%;
-  padding: 1rem 1.5rem;
+  background-color: var(--lightblue-color);
+  width: 80%;
+  height: 20px;
+  padding: 5%;
 }
 
-::placeholder {
+.hamburger-menu input #query {
+  font: 1rem;
+  width: 90%;
+  height: auto;
+}
+
+.hamburger-menu ::placeholder {
   color: var(--primary-color);
   opacity: 0.7;
-}
-
-button {
-  all: unset;
-  cursor: pointer;
-  width: 40px;
-  height: 55px;
-  outline: var(--primary-color) 1px solid;
-  justify-content: center;
-  align-content: center;
 }
 
 /* Searchbar end */
 
 .logo img {
   display: block;
-  margin: 1rem auto;
+  margin: 5% auto;
   width: 40%;
   height: auto;
 }
@@ -151,7 +142,6 @@ button {
 .header {
   color: var(--primary-color);
   font-size: 0.75rem;
-  font-weight: bolder;
   text-align: left;
   font-weight: bold;
   margin: 0 0.5rem;
@@ -189,7 +179,7 @@ button {
 .index-img img {
   max-width: 100%;
   height: auto;
-  margin: 1rem 0 0 0;
+  margin: 5% 0 0 0;
   outline: var(--primary-color) 2px solid;
 }
 
@@ -198,7 +188,7 @@ button {
 .short-hikes {
   background-color: var(--green-color);
   text-align: left;
-  margin: 1rem 0 0 0;
+  margin: 5% 0 0 0;
   padding: 0;
   width: 100%;
   height: auto;
@@ -215,7 +205,7 @@ button {
   color: var(--primary-color);
   text-align: left;
   font-weight: normal;
-  margin: 0 3% 13% 3%;
+  margin: 0 3% 5% 3%;
   padding: 0.5rem auto;
   max-width: 70%;
   height: auto;
@@ -231,8 +221,8 @@ button {
 .camping-hikes {
   background-color: var(--lightblue-color);
   text-align: left;
-  margin: 1rem 0 0 0;
-  padding: 1rem auto;
+  margin: 5% 0 0 0;
+  padding: 5% auto;
   width: 100%;
   height: auto;
 }
@@ -248,7 +238,7 @@ button {
   color: var(--primary-color);
   text-align: left;
   font-weight: normal;
-  margin: 0 3% 13% 3%;
+  margin: 0 3% 5% 3%;
   padding: 0.5rem auto;
   max-width: 70%;
   height: auto;
@@ -264,7 +254,7 @@ button {
 .long-hikes {
   background-color: var(--brown-color);
   text-align: left;
-  margin: 1rem 0 3rem 0;
+  margin: 5% 0 0 0;
   padding: 0;
   width: 100%;
   height: auto;
@@ -281,7 +271,7 @@ button {
   color: var(--primary-color);
   text-align: left;
   font-weight: normal;
-  margin: 0 3% 13% 3%;
+  margin: 0 3% 5% 3%;
   padding: 0.5rem auto;
   max-width: 70%;
   height: auto;
@@ -324,7 +314,6 @@ button {
 /* Footer */
 
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -335,9 +324,9 @@ button {
 /* Mobile view */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 10;
-  margin: 0.1rem;
+  margin: 0;
   background-color: var(--white-color);
   min-width: 320px;
 }
@@ -413,7 +402,9 @@ h3 {
   grid-column: 3;
 }
 
-.footer {
+footer {
   grid-row: 9;
   grid-column: 1 / span 3;
 }
+
+/* Tablet view */
